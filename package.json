@@ -1,0 +1,23 @@
+{
+  "name": "@gatsby-inc/sanity-starter",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "yarn workspaces run build",
+    "dev": "yarn workspaces run dev",
+    "format": "yarn workspaces run format",
+    "build-studio": "(cd studio && npm run build)",
+    "build-web": "(cd studio && SANITY_AUTH_TOKEN=$SANITY_DEPLOY_STUDIO_TOKEN npm run graphql-deploy) && (cd web && npm run build)",
+    "graphql-deploy": "yarn workspaces run graphql-deploy",
+    "lint": "yarn workspaces run lint",
+    "start": "npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@sanity/cli": "^0.140.17"
+  },
+  "workspaces": [
+    "studio",
+    "web"
+  ]
+}
