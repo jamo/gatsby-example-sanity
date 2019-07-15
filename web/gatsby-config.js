@@ -1,6 +1,5 @@
-// Load variables from `.env` as soon as possible
 require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV || "development"}`
+  path: `.env.${process.env.NODE_ENV}`
 });
 
 const clientConfig = require("./client-config");
@@ -13,12 +12,11 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-source-sanity",
-      options: {
-        ...clientConfig.sanity,
+      options: Object.assign({}, clientConfig.sanity, {
         token: process.env.SANITY_READ_TOKEN,
         watchMode: !isProd,
         overlayDrafts: !isProd
-      }
+      })
     }
   ]
 };

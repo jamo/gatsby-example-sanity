@@ -1,11 +1,11 @@
 {
   "root": true,
+  "api": {
+    "projectId": "925zuquf",
+    "dataset": "production"
+  },
   "project": {
     "name": "Blog with Gatsby"
-  },
-  "api": {
-    "projectId": "xq50spjj",
-    "dataset": "production"
   },
   "plugins": [
     "@sanity/base",
