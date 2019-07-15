@@ -13,7 +13,7 @@ module.exports = {
     {
       resolve: "gatsby-source-sanity",
       options: Object.assign({}, clientConfig.sanity, {
-        token: process.env.SANITY_READ_TOKEN,
+        token: process.env.GATSBY_SANITY_READ_TOKEN,
         watchMode: !isProd,
         overlayDrafts: !isProd
       })
