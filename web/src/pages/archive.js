@@ -17,7 +17,6 @@ export const query = graphql`
           publishedAt
           mainImage {
             ...SanityImage
-            alt
           }
           title
           _rawExcerpt

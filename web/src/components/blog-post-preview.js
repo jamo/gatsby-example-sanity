@@ -21,7 +21,7 @@ function BlogPostPreview(props) {
               .width(600)
               .height(Math.floor((9 / 16) * 600))
               .url()}
-            alt={props.mainImage.alt}
+            alt="props.mainImage.alt"
           />
         )}
       </div>

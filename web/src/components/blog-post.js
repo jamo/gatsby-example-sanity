@@ -20,7 +20,7 @@ function BlogPost(props) {
               .height(Math.floor((9 / 16) * 1200))
               .fit("crop")
               .url()}
-            alt={mainImage.alt}
+            alt="mainImage.alt"
           />
         </div>
       )}

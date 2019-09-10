@@ -16,7 +16,6 @@ export const query = graphql`
       }
       mainImage {
         ...SanityImage
-        alt
       }
       title
       slug {
