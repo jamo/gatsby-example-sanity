@@ -14,9 +14,6 @@ export const query = graphql`
         _id
         title
       }
-      mainImage {
-        ...SanityImage
-      }
       title
       slug {
         current

@@ -17,9 +17,6 @@ export const query = graphql`
         node {
           id
           publishedAt
-          mainImage {
-            ...SanityImage
-          }
           title
           slug {
             current
