@@ -12,11 +12,7 @@ import Layout from "../containers/layout";
 
 export const query = graphql`
   query IndexPageQuery {
-    posts: allSanityPost(
-      limit: 6
-      sort: { fields: [publishedAt], order: DESC }
-      filter: { slug: { current: { ne: null } }, publishedAt: { ne: null } }
-    ) {
+    posts: allSanityPost(limit: 6) {
       edges {
         node {
           id
