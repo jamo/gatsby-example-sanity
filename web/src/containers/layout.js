@@ -11,18 +11,12 @@ function LayoutContainer(props) {
     setShowNav(false);
   }
   return (
-    <StaticQuery
-      render={data => {
-        return (
-          <Layout
-            {...props}
-            showNav={showNav}
-            siteTitle="data.site.title"
-            onHideNav={handleHideNav}
-            onShowNav={handleShowNav}
-          />
-        );
-      }}
+    <Layout
+      {...props}
+      showNav={showNav}
+      siteTitle="data.site.title"
+      onHideNav={handleHideNav}
+      onShowNav={handleShowNav}
     />
   );
 }
