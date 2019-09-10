@@ -25,7 +25,6 @@ export const query = graphql`
             ...SanityImage
           }
           title
-          _rawExcerpt
           slug {
             current
           }
