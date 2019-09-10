@@ -8,7 +8,6 @@ import {
 import BlogPostPreviewList from "../components/blog-post-preview-list";
 import Container from "../components/container";
 import GraphQLErrorList from "../components/graphql-error-list";
-import SEO from "../components/seo";
 import Layout from "../containers/layout";
 
 export const query = graphql`
